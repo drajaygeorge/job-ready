@@ -26,6 +26,7 @@
   margin-top: 2rem;
 }
 
+<<<<<<< HEAD
 button {
   margin: 0 1rem;
   padding: 0.5rem 1rem;
@@ -119,3 +120,8 @@ button[type="button"] {
     margin-top: 20px;
   }
 }
+=======
+.small {
+  font-size: 0.75rem;
+}
+>>>>>>> 508f3fc (added a new CSS class .large-textarea to make the textarea elements larger with a word wrap. also added a new CSS class .large-input to make the input elements larger)
