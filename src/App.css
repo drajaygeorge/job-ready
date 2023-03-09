@@ -123,6 +123,7 @@ button[type="button"] {
 =======
 .small {
   font-size: 0.75rem;
+<<<<<<< HEAD
 }
 <<<<<<< HEAD
 >>>>>>> 508f3fc (added a new CSS class .large-textarea to make the textarea elements larger with a word wrap. also added a new CSS class .large-input to make the input elements larger)
@@ -156,3 +157,6 @@ button[type="button"] {
   padding: 20px;
 }
 >>>>>>> 9b1a2cb (added a new CSS class .large-textarea to make the textarea elements larger with a word wrap. also added a new CSS class .large-input to make the input elements larger)
+=======
+}
+>>>>>>> 6ff8ca9 (add a padding of 20px to all sides of the text fields container, which will create a margin between the edges of the container and the text boxes. The display: flex; and flex-direction: column; properties will ensure that the text boxes appear one after the other vertically, as required.)
