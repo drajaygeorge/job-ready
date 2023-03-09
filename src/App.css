@@ -214,4 +214,15 @@ button[type="button"] {
     margin-bottom: 0;
   }
 }
->>>>>>> ccf0a45 (Updated styling changes for consistency of form fields)
+
+.large-textarea {
+  width: 100%;
+  height: 400px;
+  resize: vertical;
+  word-wrap: break-word;
+}
+
+.large-input {
+  width: 100%;
+  height: 50px;
+}
