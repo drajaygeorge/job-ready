@@ -68,33 +68,10 @@ button {
   height: 400px;
   resize: vertical;
   word-wrap: break-word;
-  padding: 10px;
-  margin-bottom: 20px;
 }
 
 .large-input {
   height: 50px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .form-fields-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .text-fields-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .large-textarea,
-  .large-input {
-    width: calc(50% - 10px);
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
 }
 
 .text-fields-container {
