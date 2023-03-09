@@ -19,28 +19,31 @@ function App() {
         </div>
         {showResumeFields && (
           <div className="text-fields-container">
-            <label htmlFor="resume-name">Name</label>
-            <input type="text" id="resume-name" placeholder="Enter your name" />
+            <label htmlFor="current-resume">Current Resume</label>
+            <textarea type="text" id="current-resume" className="large-textarea" placeholder="Enter your current resume"></textarea>
 
-            <label htmlFor="resume-experience">Experience</label>
-            <textarea id="resume-experience" placeholder="Enter your work experience"></textarea>
+            <label htmlFor="job-description">Description and details of job you are applying to</label>
+            <textarea type="text" id="job-description" className="large-textarea" placeholder="Enter the job description"></textarea>
 
-            <label htmlFor="resume-skills">Skills</label>
-            <textarea id="resume-skills" placeholder="Enter your skills"></textarea>
+            <label htmlFor="special-requests">Any special requests</label>
+            <textarea id="special-requests" className="large-textarea" placeholder="Enter any special requests"></textarea>
           </div>
         )}
         {showCoverLetterFields && (
-          <div className="text-fields-container">
+          <div className="form-fields-container">
             <label htmlFor="cover-letter-name">Name</label>
-            <input type="text" id="cover-letter-name" placeholder="Enter your name" />
+            <input type="text" id="cover-letter-name" className="large-input" placeholder="Enter your name" />
 
             <label htmlFor="cover-letter-company">Company</label>
-            <input type="text" id="cover-letter-company" placeholder="Enter the company name" />
+            <input type="text" id="cover-letter-company" className="large-input" placeholder="Enter the company name" />
 
             <label htmlFor="cover-letter-content">Content</label>
-            <textarea id="cover-letter-content" placeholder="Enter your cover letter content"></textarea>
+            <textarea id="cover-letter-content" className="large-textarea" placeholder="Enter your cover letter content"></textarea>
           </div>
         )}
+        <div className="output-container">
+          {/* The output from ChatGPT will be printed here */}
+        </div>
       </header>
     </div>
   );
