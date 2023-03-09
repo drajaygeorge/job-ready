@@ -97,6 +97,9 @@ dist
 # FuseBox cache
 .fusebox/
 
+# ChatGPT
+ChatGPT.js
+
 # DynamoDB Local files
 .dynamodb/
 
