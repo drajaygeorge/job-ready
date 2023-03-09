@@ -70,12 +70,20 @@ function App() {
               <label htmlFor="cover-letter-company">Company</label>
               <input type="text" id="cover-letter-company" className="large-input" placeholder="Enter the company name" />
 
+<<<<<<< HEAD
               <label htmlFor="cover-letter-content">Content</label>
               <textarea id="cover-letter-content" className="large-textarea" placeholder="Enter your cover letter content"></textarea>
 
               <button type="submit">Generate Cover Letter</button>
             </div>
           </form>
+=======
+            <label htmlFor="cover-letter-content">Content</label>
+            <textarea id="cover-letter-content" className="large-textarea" placeholder="Enter your cover letter content"></textarea>
+
+            <button onClick={generateCoverLetter}>Generate Cover Letter</button>
+          </div>
+>>>>>>> 7cb00cc (Included chatGPT code in App.js)
         )}
         <div className="output-container">
           {output}
