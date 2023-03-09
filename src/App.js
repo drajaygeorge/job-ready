@@ -14,8 +14,8 @@ function App() {
           Job Ready is a web app that helps you create personalized and formatted resumes and cover letters using OpenAI's GPT-3. Just paste your current resume, the targeted job description, and the desired tone, and Job Ready will provide you with a recommended output.
         </p>
         <div className="buttons-container">
-          <button onClick={() => setShowResumeFields(true)}>Resume</button>
-          <button onClick={() => setShowCoverLetterFields(true)}>Cover Letter</button>
+          <button onClick={() => {setShowResumeFields(true); setShowCoverLetterFields(false)}}>Resume</button>
+          <button onClick={() => {setShowCoverLetterFields(true); setShowResumeFields(false)}}>Cover Letter</button>
         </div>
         {showResumeFields && (
           <div className="text-fields-container">
