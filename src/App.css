@@ -30,14 +30,27 @@
   font-size: 0.75rem;
 }
 
-.large-textarea {
+.form-fields-container {
   width: 100%;
+}
+
+.form-fields-container input, .form-fields-container textarea {
+  width: 100%;
+}
+
+.large-textarea {
   height: 400px;
   resize: vertical;
   word-wrap: break-word;
 }
 
 .large-input {
-  width: 100%;
   height: 50px;
+}
+
+.text-fields-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
