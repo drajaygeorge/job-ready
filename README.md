@@ -1,78 +1,92 @@
-# GitHub Codespaces ♥️ React
+# Job Ready 🚀
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+[![License](https://img.shields.io/badge/license-Apache-blue)](https://github.com/drajaygeorge/job-ready/blob/main/LICENSE)
+[![React](https://img.shields.io/badge/react-v17.0.2-blue)](https://github.com/facebook/react)
+[![Node.js](https://img.shields.io/badge/node-v14.17.5-green)](https://github.com/nodejs/node)
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+📝 Job Ready is a web app that utilizes OpenAI's GPT-3 to provide personalized and formatted resumes and cover letters. The app allows users to paste their current resume, targeted job description, and desired tone to receive a recommended output. It is built with React, Node.js, and ChatGPT API.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## Table of Contents
 
-This project was bootstrapped for you with [Create React App](https://github.com/facebook/create-react-app).
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+📑 Personalized and formatted resumes and cover letters.
+🚀 Easy to use interface.
+🤖 Integration with OpenAI's GPT-3 API.
 
-### `npm start`
+## Technologies Used
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+🚀 React - v17.0.2
+🚀 Node.js - v14.17.5
+🤖 ChatGPT API
+🎨 HTML
+🎨 CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+## Installation
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository.
 
-### `npm test`
+```bash
+git clone https://github.com/drajaygeorge/job-ready.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory.
 
-### `npm run build`
+```bash
+cd job-ready
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Create a .env file and add the following environment variables.
 
-### `npm run eject`
+```bash
+REACT_APP_API_KEY=<YOUR_API_KEY>
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Start the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Visit the app at [http://localhost:3000](http://localhost:3000).
+2. Enter your current resume, targeted job description, and desired tone.
+3. Click on the "Submit" button to receive your recommended output.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👍 Contributions are always welcome! Please follow these steps to contribute.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes and commit them.
+4. Push to the branch.
+5. Submit a pull request.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Job Ready is licensed under the Apache License 2.0. See [LICENSE](https://github.com/drajaygeorge/job-ready/blob/main/LICENSE) for more information.
 
-### Analyzing the Bundle Size
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- This project was created by [drajaygeorge](https://github.com/drajaygeorge).
+- The app utilizes [OpenAI's GPT-3 API](https://beta.openai.com/docs/api-reference/introduction).
+- The app was built with [React](https://reactjs.org/) and [Node.js](https://nodejs.org/).
+- The shields in the README were generated with [Shields.io](https://shields.io/).
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
