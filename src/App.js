@@ -62,18 +62,20 @@ function App() {
           </form>
         )}
         {showCoverLetterFields && (
-          <div className="form-fields-container">
-            <label htmlFor="cover-letter-name">Name</label>
-            <input type="text" id="cover-letter-name" className="large-input" placeholder="Enter your name" />
+          <form onSubmit={generateCoverLetter}>
+            <div className="text-fields-container">
+              <label htmlFor="cover-letter-name">Name</label>
+              <input type="text" id="cover-letter-name" className="large-input" placeholder="Enter your name" />
 
-            <label htmlFor="cover-letter-company">Company</label>
-            <input type="text" id="cover-letter-company" className="large-input" placeholder="Enter the company name" />
+              <label htmlFor="cover-letter-company">Company</label>
+              <input type="text" id="cover-letter-company" className="large-input" placeholder="Enter the company name" />
 
-            <label htmlFor="cover-letter-content">Content</label>
-            <textarea id="cover-letter-content" className="large-textarea" placeholder="Enter your cover letter content"></textarea>
+              <label htmlFor="cover-letter-content">Content</label>
+              <textarea id="cover-letter-content" className="large-textarea" placeholder="Enter your cover letter content"></textarea>
 
-            <button onClick={generateCoverLetter}>Generate Cover Letter</button>
-          </div>
+              <button type="submit">Generate Cover Letter</button>
+            </div>
+          </form>
         )}
         <div className="output-container">
           {output}
