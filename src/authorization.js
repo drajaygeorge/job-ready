@@ -1,6 +1,6 @@
 import axios from 'axios';
 const API_ENDPOINT = '//api.openai.com/v1/completions';
-const API_SECRET_KEY = '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';
+const API_SECRET_KEY = process.env.API_SECRET_KEY;
 
 async function generateResume(resume, jobDescription, specialRequests) {
   try {
