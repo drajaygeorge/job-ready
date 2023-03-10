@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import generateResume from './ChatGPT';
+import { generateResume } from './ChatGPT';
 import axios from 'axios';
 
 function App() {
