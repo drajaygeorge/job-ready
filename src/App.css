@@ -68,6 +68,8 @@ button {
   height: 400px;
   resize: vertical;
   word-wrap: break-word;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .large-input {
