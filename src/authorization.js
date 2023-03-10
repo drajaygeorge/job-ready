@@ -1,3 +1,4 @@
+import axios from 'axios';
 const API_ENDPOINT = '//api.openai.com/v1/completions';
 const API_SECRET_KEY = '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';
 
@@ -36,3 +37,4 @@ async function generateCoverLetter(name, company, content) {
 }
 
 export { generateResume, generateCoverLetter };
+export { API_SECRET_KEY };

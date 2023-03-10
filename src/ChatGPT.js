@@ -1,4 +1,6 @@
 import axios from 'axios';
+import { API_SECRET_KEY } from './authorization';
+
 
 const API_ENDPOINT = '//api.openai.com/v1/completions'; // Replace this with your actual API endpoint
 // API Secret key
