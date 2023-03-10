@@ -27,6 +27,9 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d5e29ad (Styling to entire app...tried to make form fields of consistent size)
 button {
   margin: 0 1rem;
   padding: 0.5rem 1rem;
@@ -37,15 +40,25 @@ button {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+=======
+.form-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+>>>>>>> d5e29ad (Styling to entire app...tried to make form fields of consistent size)
 }
 
 .text-fields-container {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -140,6 +153,12 @@ button[type="button"] {
 
 .large-textarea {
 =======
+=======
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+>>>>>>> d5e29ad (Styling to entire app...tried to make form fields of consistent size)
 }
 
 .large-textarea {
@@ -148,6 +167,8 @@ button[type="button"] {
   height: 400px;
   resize: vertical;
   word-wrap: break-word;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .large-input {
@@ -171,5 +192,26 @@ button[type="button"] {
 =======
   width: 100%;
   height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-fields-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-fields-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .large-textarea,
+  .large-input {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
 }
 >>>>>>> ccf0a45 (Updated styling changes for consistency of form fields)

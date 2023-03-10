@@ -71,6 +71,7 @@ function App() {
               <input type="text" id="cover-letter-company" className="large-input" placeholder="Enter the company name" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
               <label htmlFor="cover-letter-content">Content</label>
               <textarea id="cover-letter-content" className="large-textarea" placeholder="Enter your cover letter content"></textarea>
 
@@ -84,6 +85,14 @@ function App() {
             <button onClick={generateCoverLetter}>Generate Cover Letter</button>
           </div>
 >>>>>>> 7cb00cc (Included chatGPT code in App.js)
+=======
+              <label htmlFor="cover-letter-content">Content</label>
+              <textarea id="cover-letter-content" className="large-textarea" placeholder="Enter your cover letter content"></textarea>
+
+              <button type="submit">Generate Cover Letter</button>
+            </div>
+          </form>
+>>>>>>> d5e29ad (Styling to entire app...tried to make form fields of consistent size)
         )}
         <div className="output-container">
           {output}
