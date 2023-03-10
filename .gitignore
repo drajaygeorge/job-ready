@@ -112,6 +112,9 @@ ChatGPT.js
 /.pnp
 .pnp.js
 
+# API
+authorization.js
+
 # testing
 /coverage
 

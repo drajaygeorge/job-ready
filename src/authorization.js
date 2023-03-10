@@ -1,5 +1,5 @@
 const API_ENDPOINT = '//api.openai.com/v1/completions';
-const API_SECRET_KEY = '<YOUR_API_SECRET_KEY>';
+const API_SECRET_KEY = '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';
 
 async function generateResume(resume, jobDescription, specialRequests) {
   try {
