@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import { generateResume } from './ChatGPT';
+import { generateResume, generateCoverLetter } from './ChatGPT';
 import axios from 'axios';
+import { API_SECRET_KEY } from './authorization';
 
 function App() {
   const [showResumeFields, setShowResumeFields] = useState(false);
@@ -15,22 +16,19 @@ function App() {
     const jobDescription = document.getElementById('job-description').value;
     const specialRequests = document.getElementById('special-requests').value;
 
-    const response = await generateResume(resume, jobDescription, specialRequests);
+    const response = await generateResume(resume, jobDescription, specialRequests, API_SECRET_KEY);
     setOutput(response);
   }
 
-  const generateCoverLetter = async () => {
+  const handleGenerateCoverLetter = async (event) => {
+    event.preventDefault();
+
     const name = document.getElementById('cover-letter-name').value;
     const company = document.getElementById('cover-letter-company').value;
     const content = document.getElementById('cover-letter-content').value;
 
-    const response = await axios.post('/api/generateCoverLetter', {
-      name,
-      company,
-      content,
-    });
-
-    setOutput(response.data);
+    const response = await generateCoverLetter(name, company, content, API_SECRET_KEY);
+    setOutput(response);
   };
 
   return (
@@ -62,7 +60,7 @@ function App() {
           </form>
         )}
         {showCoverLetterFields && (
-          <form onSubmit={generateCoverLetter}>
+          <form onSubmit={handleGenerateCoverLetter}>
             <div className="text-fields-container">
               <label htmlFor="cover-letter-name">Name</label>
               <input type="text" id="cover-letter-name" className="large-input" placeholder="Enter your name" />
